@@ -687,9 +687,9 @@ resources/templates/index.html
 </html>
 ```
 
-访问 127.0.0.1:8080/index 展示下图：
+访问 127.0.0.1:8080/index 展示下图：  
 
-**放图Springboot-thymeleaf**
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/SpringBoot-Thymeleaf.PNG)  
 
 
 
@@ -765,9 +765,10 @@ spring.freemarker.request-context-attribute=request
 spring.freemarker.suffix=.ftl
 ```
 
-访问 localhost:8080/index 展示如图：
+访问 localhost:8080/index 展示如图：  
 
-**放图Springboot-freemarker**
+
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/springboot-freemarker.PNG)  
 
 
 
@@ -900,9 +901,10 @@ public class HelloController {
 }
 ```
 
-效果如图：
+效果如图：  
 
-**放图Springboot-8th**
+
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/SpringBoot-8th.PNG)  
 
 
 
@@ -970,9 +972,10 @@ http://127.0.0.1:8080/book?b.name=书本&b.price=98&a.name=作者&a.age=60
 
 ### 9. Spring Boot全局异常处理
 
-默认情况下异常页面如图：
+默认情况下异常页面如图：  
 
-**放图index**
+
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/index.PNG)  
 
 出现这个页面原因是开发者没有明确提供一格/error路径。Spring Boot处理异常时，是当所有条件都不满足时才去找/error路径。
 
@@ -990,9 +993,10 @@ http://127.0.0.1:8080/book?b.name=书本&b.price=98&a.name=作者&a.age=60
 
 相关html页面默认存放在 `classpath:/static/error/`
 
-下图展示抛出405异常时，使用了4xx.html页面的情况：
+下图展示抛出405异常时，使用了4xx.html页面的情况：  
 
-**放图index-405**
+
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/index-405.PNG)  
 
 
 
@@ -1041,9 +1045,9 @@ http://127.0.0.1:8080/book?b.name=书本&b.price=98&a.name=作者&a.age=60
 </html>
 ```
 
-抛出500异常时展示如图：
+抛出500异常时展示如图：  
 
-**放图500-error**
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/500-error.PNG)  
 
 🔺如果动态页面和静态页面同时定义了异常处理页面，则默认使用动态页面。
 
@@ -1074,9 +1078,10 @@ public class MyErrorAttributes  extends DefaultErrorAttributes {
 
 ⭐定义好的ErrorAttributes一定要注册成一格Bean，这样就不会使用默认的DefaultErrorAttributes了。
 
-效果如图：
+效果如图：  
 
-**放图500-error。。。。**
+
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/5xxerror-self.PNG)  
 
 
 
@@ -1103,9 +1108,10 @@ public class MyErrorViewResolver extends DefaultErrorViewResolver {
 
 相关html页面在 `resources/templates/aaa/1.html`
 
-效果如下图：
+效果如下图：  
 
-**放图NewErrorPage**
+
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/NewErrorPage.PNG)  
 
 
 
@@ -1318,9 +1324,10 @@ public class ScheduledApplication {
 - initialDelay：首次任务启动的延迟时间
 - 所有时间单位都是毫秒
 
-展示效果如图：
+展示效果如图：  
 
-**放图Scheduled**
+
+![Image text](https://github.com/Pangxiaox/My_SpringBoot_Learning/blob/master/SpringBoot-pic/scheduled.PNG)  
 
 🔺@Scheduled注解也支持cron表达式：
 
